@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 class Bit(models.Model):
     bit_text = models.CharField(max_length=200)
     bit_date = models.DateTimeField('date published')
-    author = models.ForeignKey(User)
-    o_author = models.ForeignKey(User)
+    author = models.ForeignKey(User, related_name='author')
+    o_author = models.ForeignKey(User, related_name='o_author')
     priv_options = (
         ('A', 'All'),
         ('I', 'I'),
