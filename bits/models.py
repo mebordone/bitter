@@ -13,4 +13,4 @@ class Bit(models.Model):
         ('I', 'I'),
         ('F', 'Followers'),
     )
-    pivacy = models.CharField(max_length=1, choices=priv_options, default='A)
+    pivacy = models.CharField(max_length=1, choices=priv_options, default='A')
